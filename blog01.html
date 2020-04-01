@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bungee"
+      rel="stylesheet"
+    />
+    <link href="CSS/nav2.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/blog.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      body {
+        display: flex;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 23px;
+        line-height: 45px;
+        color: #111111;
+      }
+      .main {
+        position: absolute;
+        top: 20%;
+        left: 4%;
+        margin: 120px;
+        width: 80%;
+        flex: 80%;
+        justify-content: center;
+        background-color: #f5f5f5;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio Website" />
+    <meta name="keywords" content="HTML,CSS,JavaScript" />
+    <meta name="author" content="Sudhan Shrestha" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudhan Shrestha &mdash; Blog01</title>
+  </head>
+  <body bgcolor="white">
+    <!-- Navaigation bar -->
+    <h2><a href="Home.html"> SUDHAN SHRESTHA </a></h2>
+
+    <nav>
+      <ul>
+        <li><a href="Home.html"> Home </a></li>
+        <li><a href="About.html"> About </a></li>
+        <li><a href="Portfolio.html"> Portfolio </a></li>
+        <li><a href="Blog.html"> Blog </a></li>
+        <li><a href="Research.html"> Research </a></li>
+        <li><a href="Contact.html"> Contact </a></li>
+        <div class="line"></div>
+      </ul>
+    </nav>
+
+    <!-- Blog section contained in the main class -->
+    <div class="main">
+      <p align="justify" style="margin: 20px; padding: 60px">
+        <b style="font-size: 60px;,align-items: center;"> Impact of Games </b
+        ><br />
+        <b style="font-size: 15px;,align-items: center;"
+          >MAY 7 , 2019 BY SUDHAN SHRESTHA</b
+        ><br /><br />
+
+        <img
+          src="image/blog/game1.jpg"
+          height="550px"
+          width="1000px;"
+          style="margin-left: 4%;"
+        /><br /><br />
+
+        I remember playing my first game in a black and white TV with a console
+        plugged in it and playing a Contra. It was my first time playing a game
+        as in a console and although the game’s graphics were in tiny pixelated
+        form, I was quickly hooked on to it. Video Games have developed quite
+        much from then games now day come in high quality with real life graphic
+        which make you go “Wow!”.<br />
+        These games have been a digital source of entertainment these days and
+        ages from kids to adults play them these days. These games have been
+        making a huge impact on the society as due to these games many people
+        children specially are spending more time in homes instead of going out
+        and play , this also result in making the newer generation of children
+        more socially awkward and as this industry is growing with game that are
+        pretty much close to reality with Virtual Reality(VR) who know what will
+        happen. <br /><br />
+        <img
+          src="image/blog/game2.jpg"
+          align="right"
+          height="400px"
+          width="700px;"
+          style="padding: 20px;"
+        />
+
+        Games are very fun to play and are exciting, so we waste much of our
+        time on them and are so into it that we spend most of our time playing
+        them and in a blink of an eye time goes by and we don’t even notice it.
+        Although these games have some of the negative effect these also have
+        their own positive impact which most of us fail to notice. As most of
+        the younger generation are into them these younger ones can get to know
+        about various things such as the issue related to violence, call of duty
+        and responsibility. They get rewards if they follow the rules of the
+        games and if they try to cut line or do some illegal things inside the
+        game which can also be related in real life, they get punished which
+        makes them aware the negative and positives things. Playing games have
+        also proven to be make our reflexes fast as modern First-Person Shooter
+        games (FPS) are fast paced and need quick reflexes. Some games also
+        provide extra knowledge about various things and even history sometimes
+        which are good for the younger generations. <br /><br />
+
+        Video games create a separate alternate universe for us to enjoy if we
+        can make them more creative and knowledgeable then it will be much
+        better. Rather than restrict the children’s form games we should let
+        them enjoy games which may benefit them and the adults can also enjoy
+        these games with them in doing so the young ones minds can be sharpened
+        ad the adults can take this time to relax and have fun.
+      </p>
+    </div>
+    <!-- Scroll Indicator -->
+    <div class="header">
+      <div class="bar">
+        <div class="scroll-indicator" id="myBar"></div>
+      </div>
+    </div>
+
+    <script>
+      // When page scrolled function executes
+      window.onscroll = function() {
+        myFunction();
+      };
+
+      function myFunction() {
+        var winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        var height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet"> 
+<link href="CSS/nav2.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<link href="CSS/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style>
+	body
+	{
+		color: #111111;
+		font-family: 'Lora', serif;
+		display: flex;
+	}
+
+	input[type=submit] 
+	{
+	    width: 10em;
+	    height: 2em;
+	    background: lightgrey;
+	    border: solid 1px;
+	    border-color: grey;
+	    border-radius: 4px; 
+	}
+
+</style>
+
+ 	<meta charset="UTF-8">
+  	<meta name="description" content="Portfolio Website">
+  	<meta name="keywords" content="HTML,CSS,JavaScript">
+  	<meta name="author" content="Sudhan Shrestha">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title> Sudhan Shrestha &mdash; Contact </title>
+
+</head>
+
+<body bgcolor="white">
+
+
+	<h2><a href="Home.html">SUDHAN SHRESTHA</a></h2>
+
+	<!-- Navaigation bar -->
+	<nav>
+
+		<ul>
+			<li> <a href="Home.html"> Home</a> </li>
+			<li> <a href="About.html"> About </a> </li>
+			<li> <a href="Portfolio.html"> Portfolio </a> </li>
+			<li> <a href="Blog.html"> Blog </a> </li>
+			<li> <a href="Research.html"> Research </a> </li>
+			<li> <a href="Contact.html"> Contact </a> </li>
+			<div class="line"></div>
+		</ul>
+
+	</nav>
+<!-- Navaigation bar  END -->
+
+<!-- class for Contact notice  -->
+	<div class="notice">
+
+		<h1 style="font-size: 50px;"> CONTACT </h1><br>
+			<p>If you have any querries please fill out the details about it in the form below or you can mail me at sudhanbshrestha@gamil.com you can also contact me through social media.</p>
+	</div>
+<!-- wrapper class created for the form -->
+	<div class="wrapper">
+		<form name="messageForm" onsubmit="validateForm()">
+			<p>First name: <input type="text" name="firstname" size="100pt" style="height: 30px;" placeholder="First Name"></p>
+			<p>Last name: <input type="text" name="lastname" size="100pt" style="height: 30px;" placeholder="Last Name"></p>
+			<p>Subject: <input type="text" name="subject" size="100pt" style="height: 30px;"></p>
+			<p>Gender: <input type="radio" name="gender" value="male" checked> Male 
+			<input type="radio" name="gender" value="female"> Female </p>
+			<p>Message: <br><textarea name="message" rows="10" cols="80" placeholder="Enter Message"></textarea></p>
+			<p><input type="submit" value="Send"></p>
+		</form>
+	</div>
+
+	<script>
+		// Checking validification of the form
+		function validateForm() {
+			var fname = document.forms["messageForm"]["firstname"].value;
+			var lname = document.forms["messageForm"]["lastname"].value;
+			var sub = document.forms["messageForm"]["subject"].value;
+			var gender = document.forms["messageForm"]["gender"].value;
+			var message = document.forms["messageForm"]["message"].value;
+
+			if (fname == "" || lname == "" || sub=="" || message == ""){
+					alert("Please fill the form properly. Empty values found !");
+				}
+
+			else {
+					alert("Thank you for the feedback.");
+		
+				}
+			}
+	</script>
+<!-- Social media icons -->
+	<div class="social">
+		<center><h3 style="color: #111111">Follow Me On</h3></center>
+	
+		<ul>
+			<li> <a target="_blank" href="https://www.facebook.com/sudhanshresthaphotography/?modal=suggested_action">
+				<i class="fab fa-facebook fa-2x"></i>
+				</a>
+			</li>
+			<li><a target="_blank" href="https://www.instagram.com/xxibsudbshr/?hl=en">
+				<i class="fab fa-instagram fa-2x"></i>
+				</a>
+			</li>
+			<li><a target="_blank" href="https://www.youtube.com/channel/UC2eAQIQndk9juXim1FhS2Vw?view_as=subscriber">
+				<i class="fab fa-youtube fa-2x"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<!-- Scroll Indicator-->
+	<div class="header">
+  		<div class="bar">
+    		<div class="scroll-indicator" id="myBar"></div>
+  		</div>  
+	</div>
+	
+<script>
+// Executes function when page scrolled
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+</body>
+</html>

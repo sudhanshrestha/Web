@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <link
+    href="https://fonts.googleapis.com/css?family=Abril+Fatface"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Bungee"
+    rel="stylesheet"
+  />
+  <link href="CSS/nav2.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+
+  <style>
+    body {
+      font-family: "Abril Fatface", cursive;
+      color: #111111;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6em;
+      text-transform: none;
+      letter-spacing: 0.02em;
+      font-weight: 300;
+      text-align: center;
+      font-family: "Nunito", sans-serif;
+    }
+
+    .msg {
+      position: relative;
+      align-items: center;
+      top: 190px;
+      left: 50px;
+      border: solid;
+      border-color: grey;
+      width: 800px;
+      padding: 5px;
+      font-family: "Lora", serif;
+    }
+  </style>
+
+  <meta charset="UTF-8" />
+  <meta name="description" content="Portfolio Website" />
+  <meta name="keywords" content="HTML,CSS,JavaScript" />
+  <meta name="author" content="Sudhan Shrestha" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <head>
+    <title>Sudhan Shrestha &mdash; About</title>
+  </head>
+
+  <body bgcolor="white">
+    <h2><a href="Home.html">SUDHAN SHRESTHA</a></h2>
+
+    <!-- Navaigation bar initilized -->
+    <nav>
+      <ul>
+        <li><a href="Home.html"> Home </a></li>
+        <li><a href="About.html"> About </a></li>
+        <li><a href="Portfolio.html"> Portfolio </a></li>
+        <li><a href="Blog.html"> Blog </a></li>
+        <li><a href="Research.html"> Research </a></li>
+        <li><a href="Contact.html"> Contact </a></li>
+        <div class="line"></div>
+      </ul>
+    </nav>
+    <!-- Navigation bar ends -->
+
+    <!--
+		Division create for the image
+		- image on hover changes using onmouseover and onmouseout function
+	 -->
+    <div class="style_images">
+      <img
+        src="image/about/me.jpg"
+        height="750px"
+        ,
+        width="500px"
+        alt="My picture"
+        onmouseover="this.src='image/about/me2.jpg'"
+        onmouseout="this.src='image/about/me.jpg'"
+      />
+    </div>
+    <!-- Division for short about me message -->
+    <div class="msg">
+      <center>
+        <b style="font-size: 25px; top: 500px; "> Hi I'm Sudhan Shrestha</b>
+        <br />
+        <b style="font-size: 15px; top: 500px;">Welcome To My Website</b>
+      </center>
+
+      <p style="padding: 20px; flex :50%;">
+        I'm a student at Islington college (Kamalphokari,Kathmandu) who is
+        curently an undergraduate student of BSc (Hons) Computing.
+        <br />
+        I was born in Kathmandu,Nepal.Love atventures.An Otaku.Love hanging out
+        with different people so if you see me drop by to say hello. Living life
+        with no regret and making memories. Photography is my hobby. Thanks for
+        stopping by!
+      </p>
+    </div>
+    <!-- Division for social media icons-->
+    <div class="SM">
+      <center>
+        <h3 style="font-size: 23px; color: black;">Follow me on</h3>
+      </center>
+
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/sudhanshresthaphotography/?modal=suggested_action"
+          >
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/xxibsudbshr/?hl=en"
+          >
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UC2eAQIQndk9juXim1FhS2Vw?view_as=subscriber"
+          >
+            <i class="fab fa-youtube fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <!-- gallery button-->
+    <div class="photo">
+      <a href="gallery.html">GALLERY</a>
+    </div>
+    <!-- Scroll indicator button-->
+    <div class="header">
+      <div class="bar">
+        <div class="scroll-indicator" id="myBar"></div>
+      </div>
+    </div>
+
+    <script>
+      // Function excutes when page scrolled
+      window.onscroll = function() {
+        myFunction();
+      };
+
+      function myFunction() {
+        var winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        var height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
+    </script>
+  </body>
+</html>

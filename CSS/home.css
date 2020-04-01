@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  word-spacing: 15px;
+}
+ul {
+  display: flex;
+}
+nav ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  position: relative;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  width: 120px;
+  padding: 1em 0;
+  position: relative;
+  padding: 25px;
+  font-family: "Bungee", cursive;
+  font-weight: bold;
+  transition: all. 4s ease-in-out;
+  font-size: 30px;
+}
+/* color added while hover*/
+nav a:hover {
+  color: grey;
+}
+nav a::before {
+  content: "";
+  background-color: grey;
+  position: absolute;
+  bottom: 0;
+  transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+  width: 100%;
+}
+
+/* Typing effect adjustment*/
+.typing::after {
+  content: " ";
+  position: absolute;
+  width: 1px;
+  right: -2px;
+  height: 90%;
+  border-right: 2px solid white;
+  animation: blink 0.5s infinite ease;
+}
+/* blinking animetion for the cursor*/
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

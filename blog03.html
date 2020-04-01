@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet"> 
+<link href="CSS/nav2.css" rel="stylesheet" type="text/css">
+<link href="CSS/blog.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+	p
+	{
+	
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 23px;
+		line-height: 45px;
+		color: #111111;
+	}
+
+	body
+	{
+		color: #111111;
+		display: flex;
+	}
+
+	.main
+	{
+		position: absolute;
+		top:20%;
+		left:4%;
+		margin:120px;
+		width: 80%;
+		flex: 80%;
+		justify-content: center;
+		background-color:  	#F5F5F5;
+	}
+
+</style>
+  	<meta charset="UTF-8">
+  	<meta name="description" content="Portfolio Website">
+  	<meta name="keywords" content="HTML,CSS,JavaScript">
+  	<meta name="author" content="Sudhan Shrestha">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sudhan Shrestha &mdash; Blog03</title>
+</head>
+
+<body bgcolor="white">
+<!-- Navaigation bar -->
+	<h2> <a href="Home.html">SUDHAN SHRESTHA</a> </h2> </center>
+
+	
+<nav>
+
+	<ul>
+		<li><a href="Home.html"> Home</a></li></li>
+		<li><a href="About.html"> About</a></li></li>
+		<li><a href="Portfolio.html"> Portfolio</a></li>
+		<li><a href="Blog.html"> Blog</a></li>
+		<li><a href="Research.html"> Research</a></li>
+		<li><a href="Contact.html"> Contact</a></li>
+		<div class="line"></div>
+
+	</ul>
+</nav>
+
+<!-- class containing blog section -->
+<div class="main"> 
+	<p align="justify" style="margin: 20px; padding: 60px">
+		<b style="font-size: 60px;, text-align: left;">Impact of Technology</b><br>
+		<b style="font-size: 15px;,align-items: center;">MAY 7 , 2019 BY SUDHAN SHRESTHA</b>
+		<br><br>
+
+	Technology has been developing rapidly these days. We can consider we are in the era of advance technology, where every part of our lives is related to tech. The growth of technology these years are massive as we have got to the smart phones from the flip phone within few years. Technology has made our life so much better and easy. We use many tech gadgets in our day to day life like smart phones, laptops, tablets, computers, refrigerators, the internet and more. <br><br>
+
+	Technology advancement has made our life easy as now the means of communication are almost instant and easy. In the past the only means of communication to the people who are far away from us was by postal services now with the bloom of technology various e-mail services, social medias and communication apps have made communicating with the people far form of us easy. This advancement is not only beneficial for our personal need only but for business and education purpose as well. <br><br>
+
+	<img src="image/blog/tech1.jpg" align="right" height="400px" width="700px;" style="padding: 20px;">
+
+
+	Entertainment in the before used to be outdoor games, TV programs or watching movies through DVD’s and CD but now with the internet we can find many sources of entertainment through social medias and video streaming sites and others. Now people can enjoy their favorite series or movie in an instant and not to forget gamming. Games these days are super realistic which I have covered in one of my vlogs but with the internet we can play in real time with other players than to play with the computer itself. These days Battle Royal gamming has been popular among the teenagers. <br><br>
+
+	Technology has also affected in our education as people can now learn about various things in their home in front of their screens  many book and tutorials can be found in the internet which gives information about almost any thing and about any subject we need to learn about. <br><br>
+	<img src="image/blog/tech2.jpg" align="left" height="400px" width="700px;" style="padding: 20px;">
+	It has also an effect in our health as many advance technologies are now used in the medical treatment. Needless to say, we nowadays check our symptoms on the internet than rather visit the doctor. We also have many smart watches which send our physical report such as heartbeat to the doctors for may patients which such condition and even contact the medical services in case of strokes for example the Apple Watch, etc. <br><br>
+
+	Technology  has also changed our lifestyles with the availability of automated and smart housed we pretty much just have to order the house what to do than rather do it our self which in a way makes us lazy but it has indeed made changes in the way we live. Also with the help of internet we can access any information  and even shop by staying in our home and the things get delivered in our doorsteps.<br><br>
+
+	Thus, the growing technology has made a very big impact in our life these changes may have negative as well as positive impact in our life but the choices is our in which way we use these technology which can make these changes either positive or negative. <br><br>
+
+
+	</p>
+	</div>
+
+<div class="header">
+  <div class="bar">
+    <div class="scroll-indicator" id="myBar"></div>
+  </div>  
+</div>
+
+<script>
+// when page scrolled the function executes
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+</body>
+</html>

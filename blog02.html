@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet"> 
+<link href="CSS/nav2.css" rel="stylesheet" type="text/css">
+<link href="CSS/blog.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	p
+	{
+
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 23px;
+		line-height: 45px;
+		color: #111111;
+	}
+
+	.main
+	{
+		position: absolute;
+		top:20%;
+		left:4%;
+		margin:120px;
+		width: 80%;
+		flex: 80%;
+		justify-content: center;
+		background-color:  	#F5F5F5;
+	}
+</style>
+
+ 	<meta charset="UTF-8">
+  	<meta name="description" content="Portfolio Website">
+  	<meta name="keywords" content="HTML,CSS,JavaScript">
+  	<meta name="author" content="Sudhan Shrestha">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+	<title> Sudhan Shrestha &mdash; Blog02 </title>
+</head>
+
+<body bgcolor="white">
+<!-- Navaigation bar -->
+	<h2> <a href="Home.html"> SUDHAN SHRESTHA </a> </h2> </center>
+
+	<nav>
+
+		<ul>
+			<li> <a href="Home.html"> Home </a> </li>
+			<li> <a href="About.html"> About </a> </li>
+			<li> <a href="Portfolio.html"> Portfolio </a> </li>
+			<li> <a href="Blog.html"> Blog </a>< /li>
+			<li> <a href="Research.html"> Research </a> </li>
+			<li> <a href="Contact.html"> Contact </a> </li>
+			<div class="line"></div>
+		</ul>
+	</nav>
+	
+<!-- Blog section contaied in main class -->
+<div class="main">
+	
+	<p align="justify" style="margin: 20px; padding: 60px">
+		<b style="font-size: 60px;,align-items: center;"> Impact of Social Media </b><br>
+		<b style="font-size: 15px;,align-items: center;">MAY 7 , 2019 BY SUDHAN SHRESTHA</b><br><br>
+		<img src="image/blog/social1.jpg" height="550px" width="1000px;" style="margin-left: 4%;">
+		<br><br>
+	
+	
+	Internet has been growing rapidly these years and with it the social medias are also treading worldwide. The social medias have now been the forms of internet communications now days. Mobile devices have seemed to have created a massive impact on the internet and the idea of staying connected to it as almost every person now has a smartphone and with which they connect to the internet and in some way end up in one of these social media sites.<br><br>
+
+	Most of the social media sites are designed in a way to get us hooked up in them, these sites are addictive due to their such design and the new contents that gets showed in them such as photos, posts and videos. Social medias have definitely helped to connect the world, but these have their own negative as well as positive impacts. <br><br>
+
+
+	<img src="image/blog/social2.png" align="right" height="400px" width="700px;" style="padding: 20px;">
+
+
+	We tend to spend most of our time in social medias and waste our valuable time meaninglessly scrolling through the feeds of social media. Social media has been found to be addictive and divert our mind form doing works. Social media has also found to have cause depression among people as they see the lavish lifestyle of people and sometimes relatives, they tend to think their life are boring and get depressed. Social media has also caused people to get addicted to it for getting more followers and likes on their photos and post which makes them spend time and effort in their posts and photos. Many suicides are also caused due to the break-ups caused in the relationships built on these social sites. <br><br>
+
+	Although these sites have done a great job of connecting the world, but their negative impacts are not to be overlooked. Thus, these social media sites not be overused and children specially should not be allowed to used these sites as they might be exposed to some exploit content which might disturb their mental behavior.
+
+	</p>
+
+<!-- Scroll indicator -->
+
+</div>
+	<div class="header">
+  		<div class="bar">
+    	<div class="scroll-indicator" id="myBar"></div>
+  	</div>  
+	</div>
+<script>
+// When page scrolled function executes
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+</body>
+</html>

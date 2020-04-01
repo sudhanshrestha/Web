@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet"> 
+<link href="CSS/nav2.css" rel="stylesheet" type="text/css">
+<link href="CSS/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+	body{
+		color: #111111;
+	}
+</style>
+  <meta charset="UTF-8">
+  	<meta name="description" content="Portfolio Website">
+  	<meta name="keywords" content="HTML,CSS,JavaScript">
+  	<meta name="author" content="Sudhan Shrestha">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sudhan Shrestha &mdash; Blog</title>
+</head>
+<body bgcolor="white">
+
+
+			<h2><a href="Home.html">SUDHAN SHRESTHA</a></h2>
+
+	<!-- Navaigation bar -->
+<nav>
+
+	<ul>
+		<li><a href="Home.html"> Home</a></li></li>
+		<li><a href="About.html"> About</a></li></li>
+		<li><a href="Portfolio.html"> Portfolio</a></li>
+		<li><a href="Blog.html"> Blog</a></li>
+		<li><a href="Research.html"> Research</a></li>
+		<li><a href="Contact.html"> Contact</a></li>
+		<div class="line"></div>
+
+	</ul>
+</nav>
+<!-- Navaigation bar Ends -->
+
+<!-- class for the blog parts caonting blocks
+	each box contain content of blogs 
+	container is the outermost part for 
+	box is the innermost part of container //for animation part
+	content contains most of the text part
+
+ -->
+
+<div class="blog">
+<div class="container">
+	<div class="box">
+		<div class="content">
+			<h1>01</h1>
+			<h3>Impacts Of Games</h3>
+			<p> I remember playing my first game in a black and white TV with a console plugged in it and playing a Contra.....
+			 </p>
+			 <a href="blog01.html" target="_blank">Read More</a>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="box">
+		<div class="content">
+			<h1>02</h1>
+			<h3>Impact Of Social Media</h3>
+			<p>Internet has been growing rapidly these years and with it the social medias are also treading worldwide......
+		</p>
+		<a href="blog02.html" target="_blank">Read More</a>
+		</div>
+	</div>
+</div>
+
+<div class="container" >
+	<div class="box">
+		<div class="content">
+			<h1>03</h1>
+			<h3>Impact Of Technology</h3>
+			<p> Technology has been developing rapidly these days. We can consider we are in the era of advance technology.....</p>
+			<a href="blog03.html" target="_blank" >Read More</a>
+		</div>
+	</div>
+</div>
+			
+</div>
+<!-- Scroll indicator -->
+<div class="header">
+  <div class="bar">
+    <div class="scroll-indicator" id="myBar"></div>
+  </div>  
+</div>
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+</body>
+</html>

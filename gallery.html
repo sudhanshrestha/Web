@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bungee"
+      rel="stylesheet"
+    />
+    <link href="CSS/gallery.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/nav2.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+      * {
+        margin: 0px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      body {
+        color: #111111;
+        font-family: "Abril Fatface", cursive;
+        height: 100vh;
+      }
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio Website" />
+    <meta name="keywords" content="HTML,CSS,JavaScript" />
+    <meta name="author" content="Sudhan Shrestha" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sudhan Shrestha &mdash; Gallery</title>
+  </head>
+
+  <body bgcolor="white">
+    <!-- Navaigation bar -->
+
+    <h2><a href="Home.html"> SUDHAN SHRESTHA </a></h2>
+
+    <nav>
+      <ul>
+        <li><a href="Home.html"> Home </a></li>
+        <li><a href="About.html"> About </a></li>
+        <li><a href="Portfolio.html"> Portfolio </a></li>
+        <li><a href="Blog.html"> Blog </a></li>
+        <li><a href="Research.html"> Research </a></li>
+        <li><a href="Contact.html"> Contact </a></li>
+        <div class="line"></div>
+      </ul>
+    </nav>
+    <!-- Navaigation bar End -->
+
+    <!-- 
+	Division created for galery
+	-gallery division into two parts room-gallery and room-preview
+	room-gallery is the big portion wehre the photos selected are displayed
+	room-preview are the small pictures which when selected gets showen
+ -->
+
+    <div class="Gallery">
+      <section>
+        <div class="room-description">
+          <h1 style="font-size: 40px;">MY PHOTOGRAPHY</h1>
+          <a href="About.html">Back</a>
+        </div>
+
+        <div class="room-gallery">
+          <img
+            src="image/gallery/img11-big.jpg"
+            class="gallery-highlight"
+            alt="smoking"
+            width="1250px"
+            height="800px"
+          />
+
+          <div class="room-preview">
+            <img
+              src="image/gallery/img11-small.jpg"
+              alt="smoking"
+              width="120px"
+              height="100px"
+              class="room-display"
+            />
+            <img
+              src="image/gallery/img2-small.jpg"
+              alt="moon"
+              width="120px"
+              height="100px"
+            />
+            <img
+              src="image/gallery/img5-small.jpg"
+              alt="monekys"
+              width="120px"
+              height="100px"
+            />
+            <img
+              src="image/gallery/img8-small.jpg"
+              alt="cat"
+              width="120px"
+              height="100px"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="JS/gallery.js"></script>
+  </body>
+</html>

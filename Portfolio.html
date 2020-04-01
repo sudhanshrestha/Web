@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet"> 
+<link href="CSS/nav2.css" rel="stylesheet" type="text/css">
+<link href="CSS/style.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+	body
+	{
+		font-family: Arial;
+	    padding: 20px;
+	    color: #111111;
+   	}
+
+    p
+    {
+		font-size: 15px;
+  	}
+</style>
+
+ 	<meta charset="UTF-8">
+  	<meta name="description" content="Portfolio Website">
+  	<meta name="keywords" content="HTML,CSS,JavaScript">
+  	<meta name="author" content="Sudhan Shrestha">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Sudhan Shrestha &mdash; Portofolio</title>
+</head>
+<!-- Navigation bar  -->
+<body bgcolor="white">
+
+	
+		<h2>
+			<a href="Home.html">SUDHAN SHRESTHA</a>
+		</h2>
+	
+	<nav>
+		<ul>
+
+			<li> <a href="Home.html"> Home </a> </li>
+			<li> <a href="About.html"> About </a> </li>
+			<li> <a href="Portfolio.html"> Portfolio </a> </li>
+			<li> <a href="Blog.html"> Blog </a> </li>
+			<li> <a href="Research.html"> Research </a> </li>
+			<li> <a href="Blog.html"> Contact </a> </li>
+			<div class="line"></div>
+
+		</ul>
+	</nav>
+	<!-- Navigation Bar ends -->
+
+
+
+<!-- Division created for the Protfolio
+		-divided into left and right section
+		the right section contains mostly academic achivements
+		the right section conatins personal information , skills and languages
+		can be increased as the achivements get accquired
+-->
+<div class="main">
+	<div class="infoleft">
+			<h3> Sudhan Shrestha </h3>
+			<h5 style="font-size: 15px;"> Student </h5><br>
+			<h4 style="background-color: lightgrey; color: black;"> Personal Info </h4>
+			<p> <b> Address </b> </p>
+			<p> Khushibu,Kathmandu </p>
+			<br>
+			<p> <b> Phone no. </b> </p>
+			<p> 9818688093 </p>
+			<br>
+			<p> <b> E-mail </b> </p>
+			<p> sudhanbshrestha@gmail.com </p>
+			<br>
+			<p> <b> Date of birth </b> </p>
+			<p> 2001-09-23 </p>
+			<br>
+			<h4 style="background-color: lightgrey; color: black;"> Skils </h4>
+			<p> Python - Amateur </p>
+			<p> Java - Amateur </p>
+			<p> HTML - Amateur </p>
+			<p> CSS - Amateur </p>
+			<p> JavaScript - Amateur </p>
+			<br>
+			<h4 style="background-color: lightgrey; color: black;"> Languages </h4>
+			<p> Nepali </p>
+			<p> Newari </p>
+			<p> English </p>
+			<p> Hindi </p>
+			<p> Japanese (amature) </p>
+	</div>
+
+
+
+	<div class="inforight">
+
+			<h3 style="background-color: lightgrey; color: black"> About me </h3>	
+				<p> 
+					I'm a undergraduate student in Islington College who is studing BSc (Hons.) Computing. I was always intrested in technology and love new electric gagets as a child so I decided to choose to proceed my future path to the I.T. industry. I'm into anime and gamming. Love clicking photos as a hobby.
+				</p>
+				<br>
+				<h3 style="background-color: lightgrey; color: black; text-align: left;"> Education </h3>
+				<br>
+				<p style="text-align: left; margin-left: 10px;"><b>2005-2015</b> <b> &nbsp;  &nbsp; WhiteField Higher Secondary School </b> </p>
+				<p style="text-align: left; margin-left: 105px;"> 3.65 GPA </p>
+				<br>
+				<p style="text-align: left; margin-left: 10px;"><b>2015-2017</b><b> &nbsp;  &nbsp; Prime Iternational College </b></p>
+				<p style="text-align: left; margin-left: 105px;"> 2.95 GPA </p>
+				<br>
+				<h3 style="background-color: lightgrey; color: black; text-align: left;"> Experiences </h3>
+				<br>
+				<p style="text-align: left; margin-left: 10px;"><b> A Library Management System </b></p>
+				<p style="text-align: left; margin-left: 10px;"> I have developed a library management as a part of my coursework using python as programming language. </p>
+				<br>
+				<p style="text-align: left; margin-left: 10px;"><b> A program to hire developers </b></p>
+				<p style="text-align: left; margin-left: 10px;"> I have developed a program with a complete GUI interface to hire developers as a part of my coursework using Java as programming language. </p>
+				<br>
+				<p style="text-align: left; margin-left: 10px;"><b> Developing a website </b></p>
+				<p style="text-align: left; margin-left: 10px;"> The development of this website was done by me as a part of my coursework .</p>
+		
+	</div>
+</div>
+<!-- portfolio part ends -->
+
+<!-- Scroll indicator -->
+<div class="header">
+ 	<div class="bar">
+    	<div class="scroll-indicator" id="myBar"></div>
+  	</div>  
+</div>
+<!-- scroll indicator ends-->
+<script>
+// Function executes when the page is scrolled
+	window.onscroll = function() {myFunction()};
+
+	function myFunction() {
+  		var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  		var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  		var scrolled = (winScroll / height) * 100;
+  		document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+</body>
+</html>
